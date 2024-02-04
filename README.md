@@ -36,3 +36,12 @@ Make sure to deploy the output of `remix build`
 
 - `build/`
 - `public/build/`
+
+### build tips
+
+```sh
+docker build --platform linux/amd64 .
+
+# build時のlogを見たい場合
+docker build --platform linux/amd64 -t remix-sample . --no-cache --progress plain
+```
